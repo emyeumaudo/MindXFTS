@@ -6,6 +6,13 @@ const loginRouter = require('./login')
 const app = express();
 const private_key = 'sdfsdfd';
 
+
+// const middleware = (req, res,next) => {
+//     req.real_name = "vinh"
+//     console.log('req');
+//     next();
+// }
+
 const middleware = (req, res, next) => {
 try {
  // verify a token symmetric - synchronous

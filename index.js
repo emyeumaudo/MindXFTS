@@ -3,7 +3,10 @@ const fs = require('fs')
 var bodyPaser = require('body-parser')
 const Router = require('./router')
 const app = express()
+const db = require('./config/db');
 
+//Connect db 
+db.connect();
 
 
 // parse application/x-www-form-urlencoded
